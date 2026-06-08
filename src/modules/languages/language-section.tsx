@@ -1,4 +1,4 @@
-import { Globe, MessageCircle } from "lucide-react";
+import { Globe } from "lucide-react";
 import { portfolioConfig } from "../../constants/data";
 import { motion, type Variants } from "framer-motion";
 import { SectionTitle } from "../../components/section/section-title";
