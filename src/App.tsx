@@ -10,6 +10,7 @@ import {
   Menu,
   X,
   Zap,
+  Phone,
 } from 'lucide-react';
 import { LinkedinIcon } from './components/icons/linkedin-icon';
 import { EducationCard } from './components/cards/education-card';
@@ -265,20 +266,46 @@ const App = () => {
             transition={{ duration: 0.6 }}
             className="bg-linear-to-br from-sky-600 to-sky-500 rounded-3xl p-8 md:p-12 text-white shadow-2xl text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
-            <p className="text-sky-50 mb-8 max-w-md mx-auto">Have a project in mind? Let's work together to create something amazing.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Let's Connect
+            </h2>
+
+            <p className="text-sky-50 mb-8 max-w-md mx-auto">
+              Have a project in mind? Let's work together to create something amazing.
+            </p>
+
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={`mailto:${portfolioConfig.email}`} className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
-                <Mail size={20} /> {portfolioConfig.email}
+              <a
+                href={`mailto:${portfolioConfig.email}`}
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
+                <Mail size={20} /> Email
               </a>
-              <a href={portfolioConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
+              <a
+                href={`tel:${portfolioConfig.phone}`}
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
+                <Phone size={20} /> Call Me
+              </a>
+              <a
+                href={portfolioConfig.socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
                 <LinkedinIcon size={20} /> LinkedIn
               </a>
-              <a href={portfolioConfig.socials.github} target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
+              <a
+                href={portfolioConfig.socials.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
                 <GitBranch size={20} /> GitHub
               </a>
             </div>
           </motion.div>
+
           <div className="text-center text-slate-400 text-sm mt-12">
             &copy; {new Date().getFullYear()} {portfolioConfig.name} — Built in Lagos, Nigeria
           </div>

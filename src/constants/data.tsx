@@ -17,6 +17,7 @@ export const portfolioConfig = {
   avatarInitials: "PU",
 
   email: "uchendubozz@gmail.com",
+  phone: "7034367931",
   location: "Lagos, Nigeria",
 
   socials: {
