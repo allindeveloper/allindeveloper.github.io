@@ -10,6 +10,7 @@ import {
   Menu,
   X,
   Zap,
+  Phone,
 } from 'lucide-react';
 import { LinkedinIcon } from './components/icons/linkedin-icon';
 import { EducationCard } from './components/cards/education-card';
@@ -134,14 +135,29 @@ const App = () => {
               <motion.p variants={fadeUp} className="text-lg text-slate-600 max-w-xl mx-auto md:mx-0">
                 {portfolioConfig.bio}
               </motion.p>
-              <div className="flex justify-center md:justify-start gap-4 pt-4">
-                <a href={`mailto:${portfolioConfig.email}`} className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row sm:justify-normal justify-center items-center gap-4 pt-4">
+                <a
+                  href={`mailto:${portfolioConfig.email}`}
+                  className="w-52 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                >
                   <Mail size={18} /> Contact Me
                 </a>
-                <a href={portfolioConfig.socials.github} target="_blank" rel="noopener noreferrer" className="border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center gap-2">
+
+                <a
+                  href={portfolioConfig.socials.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-52 border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
+                >
                   <GitBranch size={18} /> GitHub
                 </a>
-                <a href={portfolioConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center gap-2">
+
+                <a
+                  href={portfolioConfig.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-52 border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
+                >
                   <LinkedinIcon size={18} /> LinkedIn
                 </a>
               </div>
@@ -250,20 +266,46 @@ const App = () => {
             transition={{ duration: 0.6 }}
             className="bg-linear-to-br from-sky-600 to-sky-500 rounded-3xl p-8 md:p-12 text-white shadow-2xl text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
-            <p className="text-sky-50 mb-8 max-w-md mx-auto">Have a project in mind? Let's work together to create something amazing.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Let's Connect
+            </h2>
+
+            <p className="text-sky-50 mb-8 max-w-md mx-auto">
+              Have a project in mind? Let's work together to create something amazing.
+            </p>
+
             <div className="flex flex-wrap justify-center gap-4">
-              <a href={`mailto:${portfolioConfig.email}`} className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
-                <Mail size={20} /> {portfolioConfig.email}
+              <a
+                href={`mailto:${portfolioConfig.email}`}
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
+                <Mail size={20} /> Email
               </a>
-              <a href={portfolioConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
+              <a
+                href={`tel:${portfolioConfig.phone}`}
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
+                <Phone size={20} /> Call Me
+              </a>
+              <a
+                href={portfolioConfig.socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
                 <LinkedinIcon size={20} /> LinkedIn
               </a>
-              <a href={portfolioConfig.socials.github} target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold">
+              <a
+                href={portfolioConfig.socials.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all px-6 py-3 rounded-full flex items-center gap-2 font-semibold"
+              >
                 <GitBranch size={20} /> GitHub
               </a>
             </div>
           </motion.div>
+
           <div className="text-center text-slate-400 text-sm mt-12">
             &copy; {new Date().getFullYear()} {portfolioConfig.name} — Built in Lagos, Nigeria
           </div>

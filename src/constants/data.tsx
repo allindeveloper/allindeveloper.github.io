@@ -12,11 +12,12 @@ import {
 export const portfolioConfig = {
   name: "Precious Uchendu",
   title: "Senior Software Engineer | Frontend & Fullstack Developer",
-  bio: "Senior Software Engineer with 7+ years of experience building scalable web and mobile applications using React, Next.js, Vue.js, TypeScript, Node.js, and NestJS. Experienced in fintech, e-commerce, government platforms, logistics, and SaaS products, with a strong focus on performance, design systems, and user experience.",
+  bio: "Senior Software Engineer with 7 years of experience building scalable web and mobile applications using React, Next.js, Vue.js, TypeScript, Node.js, and NestJS. Experienced in fintech, e-commerce, logistics, and SaaS products, with a strong focus on performance, design systems, and user experience.",
 
   avatarInitials: "PU",
 
   email: "uchendubozz@gmail.com",
+  phone: "7034367931",
   location: "Lagos, Nigeria",
 
   socials: {
