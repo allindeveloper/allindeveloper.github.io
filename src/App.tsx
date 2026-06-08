@@ -134,14 +134,29 @@ const App = () => {
               <motion.p variants={fadeUp} className="text-lg text-slate-600 max-w-xl mx-auto md:mx-0">
                 {portfolioConfig.bio}
               </motion.p>
-              <div className="flex justify-center md:justify-start gap-4 pt-4">
-                <a href={`mailto:${portfolioConfig.email}`} className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row sm:justify-normal justify-center items-center gap-4 pt-4">
+                <a
+                  href={`mailto:${portfolioConfig.email}`}
+                  className="w-52 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                >
                   <Mail size={18} /> Contact Me
                 </a>
-                <a href={portfolioConfig.socials.github} target="_blank" rel="noopener noreferrer" className="border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center gap-2">
+
+                <a
+                  href={portfolioConfig.socials.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-52 border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
+                >
                   <GitBranch size={18} /> GitHub
                 </a>
-                <a href={portfolioConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center gap-2">
+
+                <a
+                  href={portfolioConfig.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-52 border border-slate-300 hover:border-sky-400 text-slate-700 hover:text-sky-600 px-6 py-3 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
+                >
                   <LinkedinIcon size={18} /> LinkedIn
                 </a>
               </div>
