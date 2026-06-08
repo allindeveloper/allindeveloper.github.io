@@ -201,7 +201,7 @@ export const portfolioConfig = {
 
   languages: [
     { name: "English", code: "GB" },
-    { name: "Germany", code: "DE" },
+    { name: "Deutsch", code: "DE" },
   ]
 };
 
