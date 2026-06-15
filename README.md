@@ -1,4 +1,4 @@
-hey there👋🏻 I am Precious 🇳🇬 🇩🇪, nice to meet you ✨
+hey there👋🏻 I am Precious Uchendu 🇳🇬 🇩🇪, nice to e-meet you ✨
 
 - 💅🏼  I am a Frontend Specialist 
 
